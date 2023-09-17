@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hScore {
+    float: left;
+    display: inline;
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.time {
+    float: right;
+    display: inline;
+}
+
+.sCard {
+    border: 1px solid white;
+    margin: 100px 600px;
+    text-align: center;
+    visibility: visible;
+}
+
+.title {
+font-size: 50px;
+font-weight: 800;
+letter-spacing: -2px;
+word-spacing: -2px;
+}
+
+.pTxt {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sButton {
+    font-size: 20px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+}
+
+.card1 {
+    border: 1px solid white;
+    margin: -350px 700px;
+    visibility: hidden;
+}
+
+.cardH {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    word-spacing: -2px;
+}
+
+.button {
+    text-align: left;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    font-size: 16px;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.card2 {
+    border: 1px solid white;
+    margin: 118px 700px;
+    visibility: hidden;
+}
+
+.card3 {
+    border: 1px solid white;
+    margin: -350px 700px;
+    visibility: hidden;
+}
+
+.card4 {
+    border: 1px solid white;
+    margin: 118px 700px;
+    visibility: hidden;
+}
+
+.card5 {
+    border: 1px solid white;
+    margin: -388px 700px;
+    visibility: hidden;
+}
+
+.card6 {
+    border: 1px solid white;
+    margin: 118px 700px;
+    visibility: hidden;
+}
+
+.card7 {
+    border: 1px solid white;
+    margin: -388px 700px;
+    visibility: hidden;
+}
