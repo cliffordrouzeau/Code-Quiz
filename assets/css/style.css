@@ -14,6 +14,7 @@ body {
     display: inline;
     color: blueviolet;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .time {
@@ -45,6 +46,7 @@ word-spacing: -2px;
     background-color: blueviolet;
     color: white;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .card1 {
@@ -60,13 +62,14 @@ word-spacing: -2px;
     word-spacing: -2px;
 }
 
-.button {
+.button1,.button2,.button3,.button4,.button5,.button6,.button7 {
     text-align: left;
     background-color: blueviolet;
     border-radius: 10px;
     margin-bottom: 4px;
     font-size: 16px;
     color: white;
+    cursor: pointer;
 }
 
 .buttons {
