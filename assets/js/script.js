@@ -30,15 +30,17 @@ var RoR4 = document.querySelector(".RoR4")
 var fScore = document.querySelector(".pTxt1")
 var submit = document.querySelector(".sub")
 var eName = document.getElementById("highS")
-var list = document.querySelector("list")
+var list = document.getElementById("list")
 var timeleft = 0
+var score = 0
+var lister = ""
 
 function setTimer() {
     var timerInterval = setInterval(function() {
         secondsLeft--
         time.textContent = "Time: " + secondsLeft
         
-        if(secondsLeft <= 0 || card6.style.visibility == "visible" || card7.style.visibility == "visible") {
+        if(secondsLeft <= 0 || card6.style.visibility == "visible") {
             sCard.style.visibility = "hidden"
             card1.style.visibility = "hidden"
             card2.style.visibility = "hidden"
@@ -133,10 +135,12 @@ button2.forEach((answer2) => {
 }
 function sub(event){
 event.preventDefault()
-var Name = eName.value + " score: " + score
-localStorage.setItem("highscore", Name + " time left: " + timeleft)
+var Name = eName.value + " score: " + score + " Time left: " + timeleft
 card6.style.visibility = "hidden"
 card7.style.visibility = "visible"
+lister = document.createElement("li")
+lister.textContent = Name
+list.appendChild(lister)
 }
 function view(){
 if (sCard.style.visibility == "visible") {
@@ -149,6 +153,11 @@ card7.style.visibility = "visible"
 function back(){
     card7.style.visibility = "hidden"
     sCard.style.visibility = "visible"
+}
+function clear(){
+    while (list.firstChild) {
+        list.removeChild(list.firstChild)
+    }
 }
 
 sButton.addEventListener("click", function() {
@@ -165,3 +174,4 @@ button5R.addEventListener("click", R5)
 submit.addEventListener("click", sub)
 highscore.addEventListener("click", view)
 button6.addEventListener("click", back)
+button7.addEventListener("click", clear)

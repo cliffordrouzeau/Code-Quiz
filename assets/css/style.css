@@ -113,3 +113,7 @@ word-spacing: -2px;
     margin: -388px 700px;
     visibility: hidden;
 }
+
+li {
+    list-style-type: circle;
+}
