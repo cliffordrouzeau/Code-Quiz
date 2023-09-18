@@ -36,7 +36,7 @@ letter-spacing: -2px;
 word-spacing: -2px;
 }
 
-.pTxt {
+.pTxt, .pTxt1{
     font-weight: 500;
     font-size: 20px;
 }
@@ -62,7 +62,7 @@ word-spacing: -2px;
     word-spacing: -2px;
 }
 
-.button1,.button2,.button3,.button4,.button5,.button6,.button7 {
+.button1,.button2,.button3,.button4,.button5,.button6,.button7,.button1R,.button2R,.button3R,.button4R,.button5R,.sub{
     text-align: left;
     background-color: blueviolet;
     border-radius: 10px;
