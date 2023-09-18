@@ -21,7 +21,7 @@ var card6 = document.querySelector(".card6")
 var card7 = document.querySelector(".card7")
 var highscore = document.querySelector(".hScore")
 var time = document.querySelector(".time")
-var secondsLeft = 70
+var secondsLeft = 75
 var RoR = document.querySelector(".RoR")
 var RoR1 = document.querySelector(".RoR1")
 var RoR2 = document.querySelector(".RoR2")
@@ -32,6 +32,7 @@ var score = 0
 var submit = document.querySelector(".sub")
 var eName = document.getElementById("highS")
 var list = document.querySelector("list")
+var timeleft = 0
 
 function setTimer() {
     var timerInterval = setInterval(function() {
@@ -48,6 +49,7 @@ function setTimer() {
             card6.style.visibility = "visible"
             card7.style.visibility = "hidden"
             time.textContent = ""
+            timeleft = secondsLeft
             clearInterval(timerInterval)
             secondsLeft = 70
         }
@@ -132,8 +134,8 @@ button2.forEach((answer2) => {
 }
 function sub(event){
 event.preventDefault()
-var Name = eName.value + " " + score
-localStorage.setItem("highscore", Name)
+var Name = eName.value + " score: " + score
+localStorage.setItem("highscore", Name + " time left: " + timeleft)
 card6.style.visibility = "hidden"
 card7.style.visibility = "visible"
 }
