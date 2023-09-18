@@ -38,8 +38,17 @@ function setTimer() {
         secondsLeft--
         time.textContent = "Time: " + secondsLeft
         
-        if(secondsLeft === 0) {
-
+        if(secondsLeft <= 0) {
+            sCard.style.visibility = "hidden"
+            card1.style.visibility = "hidden"
+            card2.style.visibility = "hidden"
+            card3.style.visibility = "hidden"
+            card4.style.visibility = "hidden"
+            card5.style.visibility = "hidden"
+            card6.style.visibility = "visible"
+            card7.style.visibility = "hidden"
+            time.textContent = ""
+            clearInterval(timerInterval)
         }
     }, 1000);
 
@@ -108,6 +117,7 @@ button2.forEach((answer2) => {
       RoR4.textContent = "Wrong"
       secondsLeft = secondsLeft - 10
       fScore.textContent = "Your final score is " + score
+      time.textContent = ""
     });
   });
   function R5(){
@@ -116,6 +126,7 @@ button2.forEach((answer2) => {
     RoR4.textContent = "Correct!"
     score = score + 1
     fScore.textContent = "Your final score is " + score
+    time.textContent = ""
     
 }
 function sub(event){
