@@ -149,11 +149,12 @@ card7.style.visibility = "visible"
 }
 function back(){
     card7.style.visibility = "hidden"
-    sCard.style.visibility = "visible" 
+    sCard.style.visibility = "visible"
 }
 
 sButton.addEventListener("click", function() {
     setTimer()
+    score = 0
 sCard.style.visibility = "hidden"
 card1.style.visibility = "visible"
 })
