@@ -28,7 +28,6 @@ var RoR2 = document.querySelector(".RoR2")
 var RoR3 = document.querySelector(".RoR3")
 var RoR4 = document.querySelector(".RoR4")
 var fScore = document.querySelector(".pTxt1")
-var score = 0
 var submit = document.querySelector(".sub")
 var eName = document.getElementById("highS")
 var list = document.querySelector("list")
@@ -140,14 +139,12 @@ card6.style.visibility = "hidden"
 card7.style.visibility = "visible"
 }
 function view(){
+if (sCard.style.visibility == "visible") {
 sCard.style.visibility = "hidden"
-card1.style.visibility = "hidden"
-card2.style.visibility = "hidden"
-card3.style.visibility = "hidden"
-card4.style.visibility = "hidden"
-card5.style.visibility = "hidden"
-card6.style.visibility = "hidden"
 card7.style.visibility = "visible"
+} else {
+    alert("can only view highscores at main page")
+}
 }
 function back(){
     card7.style.visibility = "hidden"
