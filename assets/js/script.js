@@ -52,7 +52,7 @@ function setTimer() {
             time.textContent = ""
             timeleft = secondsLeft
             clearInterval(timerInterval)
-            secondsLeft = 70
+            secondsLeft = 75
         }
     }, 1000);
 
