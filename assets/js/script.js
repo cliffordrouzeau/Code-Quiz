@@ -38,7 +38,7 @@ function setTimer() {
         secondsLeft--
         time.textContent = "Time: " + secondsLeft
         
-        if(secondsLeft <= 0) {
+        if(secondsLeft <= 0 || card6.style.visibility == "visible" || card7.style.visibility == "visible") {
             sCard.style.visibility = "hidden"
             card1.style.visibility = "hidden"
             card2.style.visibility = "hidden"
@@ -49,6 +49,7 @@ function setTimer() {
             card7.style.visibility = "hidden"
             time.textContent = ""
             clearInterval(timerInterval)
+            secondsLeft = 70
         }
     }, 1000);
 
@@ -138,6 +139,12 @@ card7.style.visibility = "visible"
 }
 function view(){
 sCard.style.visibility = "hidden"
+card1.style.visibility = "hidden"
+card2.style.visibility = "hidden"
+card3.style.visibility = "hidden"
+card4.style.visibility = "hidden"
+card5.style.visibility = "hidden"
+card6.style.visibility = "hidden"
 card7.style.visibility = "visible"
 }
 function back(){
