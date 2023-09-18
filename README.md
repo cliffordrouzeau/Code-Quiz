@@ -15,4 +15,4 @@ then finished with the clear all button and how to grab and clear all children f
 
 
 
-[link to Coding Quiz's live page]
+[link to Coding Quiz's live page](https://cliffordrouzeau.github.io/Code-Quiz/)
